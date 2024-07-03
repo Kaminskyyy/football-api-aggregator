@@ -10,9 +10,4 @@ export class FootballController {
   async getStatistics(): Promise<Statistics> {
     return this.footballService.countLeagues();
   }
-
-  @Get('qwerty')
-  test() {
-    return {};
-  }
 }
