@@ -10,11 +10,11 @@ export interface DatabaseConfig {
 }
 
 export default (): { [DATABASE_CONFIG_NAME]: DatabaseConfig } => {
-  const username = process.env.POSTGRES_USER || 'admin';
-  const password = process.env.POSTGRES_PASSWORD || 'admin';
-  const host = process.env.POSTGRES_HOST || 'localhost';
-  const port = parseInt(process.env.POSTGRES_PORT) || 6000;
-  const database = process.env.POSTGRES_DATABASE_NAME || 'auction';
+  const username = process.env.POSTGRES_USER || 'xxx';
+  const password = process.env.POSTGRES_PASSWORD || 'xxx';
+  const host = process.env.POSTGRES_HOST || 'xxx';
+  const port = parseInt(process.env.POSTGRES_PORT) || 1234;
+  const database = process.env.POSTGRES_DATABASE_NAME || 'xxx';
   const synchronize = Boolean(process.env.TYPE_ORM_SYNCHRONIZE) || false;
 
   return {
